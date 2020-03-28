@@ -17,11 +17,9 @@ class App extends React.Component {
   repeat() {
     fetch("https://randomuser.me/api/?results=1")
       .then(results => {
-        console.log(results);
         return results.json();
       })
       .then(data => {
-        console.log(data.results);
         let pictures = data.results.map(person => {
           return (
             <div>
