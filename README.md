@@ -2,6 +2,8 @@
 
 A Random User Generator using React 
 
+![img](https://github.com/Ishaan28malik/Random-User-Generator/blob/master/Selection_002.png)
+
 
 # Fork the project and give it a star if you like it 
 
