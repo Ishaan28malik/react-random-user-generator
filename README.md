@@ -17,3 +17,5 @@ A Random User Generator using React
 # You are good to go Happy Hacking
 
 ![React](https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_1e0d62f445e6448af1e125f5702c8227/reactjs-development-services.png)
+
+# Features Coming up is adding the contact card in with the portfolio for each user .
