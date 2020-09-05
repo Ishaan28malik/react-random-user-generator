@@ -1,5 +1,4 @@
 body {
-<<<<<<< HEAD
   display: flex;
   justify-content: center;
   margin: 100px;
@@ -14,17 +13,5 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-=======
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
->>>>>>> 1035be41e84e92842a1c36795be610baacd2540d
     monospace;
 }
