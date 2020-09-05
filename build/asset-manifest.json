@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-random-user-generator/static/css/main.b3d66ca0.chunk.css",
+    "main.js": "/react-random-user-generator/static/js/main.27b4790b.chunk.js",
+    "main.js.map": "/react-random-user-generator/static/js/main.27b4790b.chunk.js.map",
+    "runtime-main.js": "/react-random-user-generator/static/js/runtime-main.79923484.js",
+    "runtime-main.js.map": "/react-random-user-generator/static/js/runtime-main.79923484.js.map",
+    "static/js/2.42dd37ef.chunk.js": "/react-random-user-generator/static/js/2.42dd37ef.chunk.js",
+    "static/js/2.42dd37ef.chunk.js.map": "/react-random-user-generator/static/js/2.42dd37ef.chunk.js.map",
+    "index.html": "/react-random-user-generator/index.html",
+    "precache-manifest.f7254cb67fa89382681a37b2bb5a1648.js": "/react-random-user-generator/precache-manifest.f7254cb67fa89382681a37b2bb5a1648.js",
+    "service-worker.js": "/react-random-user-generator/service-worker.js",
+    "static/css/main.b3d66ca0.chunk.css.map": "/react-random-user-generator/static/css/main.b3d66ca0.chunk.css.map",
+    "static/js/2.42dd37ef.chunk.js.LICENSE.txt": "/react-random-user-generator/static/js/2.42dd37ef.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.79923484.js",
+    "static/js/2.42dd37ef.chunk.js",
+    "static/css/main.b3d66ca0.chunk.css",
+    "static/js/main.27b4790b.chunk.js"
+  ]
+}
