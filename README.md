@@ -1,4 +1,4 @@
-# Random-User-Generator
+# react-random-user-generator
 
 A Random User Generator using React 
 
