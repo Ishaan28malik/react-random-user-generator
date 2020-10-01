@@ -10,6 +10,32 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #0827a8;
 }
+svg {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  height: 10em;
+  transform: rotate(-60deg);
+  color: black;
+  animation: 3s linear 0s infinite rotate;
+}
+
+#shadow {
+  animation: 3s linear 0s infinite reverse rotate;
+  color: darkgrey;
+  opacity: 90%;
+  z-index: -1;
+  opacity: 70%;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-60deg);
+  }
+  to {
+    transform: rotate(300deg);
+  }
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
