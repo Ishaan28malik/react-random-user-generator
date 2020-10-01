@@ -8,10 +8,30 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #0827a8;
+  background-color: #ff337d;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.person-pic {
+  box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.2), 0 8px 30px 0 rgba(0, 0, 0, 0.19); 
+  border-radius: 100%;
+}
+
+.random-btn {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 10%;
+  height: 50px;
+  width: 70%;
+  align-self: center;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.2), 0 8px 30px 0 rgba(0, 0, 0, 0.19);
+  border-width: 0;
+  background-color: #ff337d;
+  font-size: 1rem;
+  color: #fff;
 }

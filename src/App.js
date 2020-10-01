@@ -11,7 +11,8 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    setInterval(() => this.repeat(), 2000);
+    //setInterval(() => this.repeat(), 2000);
+    this.repeat();
   }
 
   repeat() {
@@ -26,14 +27,16 @@ class App extends React.Component {
               <div key={person.results}>
                 <img
                   src={person.picture.large}
+                  className='person-pic'
                   style={{
                     marginTop: "-130px",
                     marginLeft: "85px",
                     height: "200px",
                     width: "200px",
                     borderRadius: "100px",
-                    border: "5px solid blue",
+                    border: "5px solid #fff",
                   }}
+                  alt='profile-img'
                 />
                 <h1
                   style={{
@@ -42,7 +45,7 @@ class App extends React.Component {
                     color: "white",
                   }}
                 >
-                  First Name: {person.name.first}
+                  First Name:  {person.name.first}
                 </h1>
                 <h1
                   style={{
@@ -51,7 +54,7 @@ class App extends React.Component {
                     color: "white",
                   }}
                 >
-                  Gender: {person.gender}
+                  Gender:  {person.gender}
                 </h1>
                 <h1
                   style={{
@@ -69,8 +72,11 @@ class App extends React.Component {
                     color: "white",
                   }}
                 >
-                  Country:{person.location.country}
+                  Country:  {person.location.country}
                 </h1>
+                <button className='random-btn' onClick={() => this.repeat()}>
+                  New random user!
+                </button>
               </div>
             </div>
           );
@@ -90,7 +96,7 @@ class App extends React.Component {
             height: "520px",
             width: "450px",
             marginTop: "150px",
-            backgroundColor: "blue",
+            backgroundColor: "#8080ff",
           }}
         >
           <div className="container1" style={{ margin: "30px" }}>
