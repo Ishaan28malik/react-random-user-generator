@@ -26,6 +26,7 @@ class App extends React.Component {
               <div key={person.results}>
                 <img
                   src={person.picture.large}
+                  alt="RandomImage"
                   style={{
                     marginTop: "-130px",
                     marginLeft: "85px",

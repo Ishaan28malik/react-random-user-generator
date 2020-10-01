@@ -9,6 +9,10 @@ var _helpers = require("./helpers");
 
 var _config = require("./config");
 
+let hasWarned = false; // deprecated... TODO: remove this method. People should use wait instead
+// the reasoning is that waiting for just any DOM change is an implementation
+// detail. People should be waiting for a specific thing to change.
+
 function waitForDomChange({
   container = (0, _helpers.getDocument)(),
   timeout = (0, _config.getConfig)().asyncUtilTimeout,
@@ -19,11 +23,19 @@ function waitForDomChange({
     characterData: true
   }
 } = {}) {
+  if (!hasWarned) {
+    hasWarned = true;
+    console.warn(`\`waitForDomChange\` has been deprecated. Use \`waitFor\` instead: https://testing-library.com/docs/dom-testing-library/api-async#waitfor.`);
+  }
+
   return new Promise((resolve, reject) => {
     const timer = (0, _helpers.setTimeout)(function () {
       onDone(new Error('Timed out in waitForDomChange.'), null);
     }, timeout);
-    const observer = (0, _helpers.newMutationObserver)(function (mutationsList) {
+    const {
+      MutationObserver
+    } = (0, _helpers.getWindowFromNode)(container);
+    const observer = new MutationObserver(function (mutationsList) {
       onDone(null, mutationsList);
     });
     (0, _helpers.runWithRealTimers)(() => observer.observe(container, mutationObserverOptions));
