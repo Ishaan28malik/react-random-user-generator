@@ -27,7 +27,6 @@ interface DataTransfer { }
 interface StyleMedia { }
 
 interface Element { }
-interface DocumentFragment { }
 
 interface HTMLElement extends Element { }
 interface HTMLAnchorElement extends HTMLElement { }
@@ -69,7 +68,6 @@ interface HTMLParamElement extends HTMLElement { }
 interface HTMLPreElement extends HTMLElement { }
 interface HTMLProgressElement extends HTMLElement { }
 interface HTMLQuoteElement extends HTMLElement { }
-interface HTMLSlotElement extends HTMLElement { }
 interface HTMLScriptElement extends HTMLElement { }
 interface HTMLSelectElement extends HTMLElement { }
 interface HTMLSourceElement extends HTMLElement { }
