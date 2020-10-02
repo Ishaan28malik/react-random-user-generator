@@ -1,0 +1,2 @@
+# Ignore Dependency directories and when cloned, do npm install
+node_modules/
