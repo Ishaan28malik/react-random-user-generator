@@ -22,13 +22,13 @@ class App extends React.Component {
         return results.json();
       })
       .then((data) => {
-        let pictures = data.results.map((person) => {
+        let pictures = data.results.map((person, key) => {
           return (
-            <div>
+            <div key={key}>
               <div key={person.results}>
                 <img
                   src={person.picture.large}
-                  className='profile-pic'
+                  className="profile-pic"
                   style={{
                     marginTop: "-130px",
                     marginLeft: "85px",
@@ -37,7 +37,7 @@ class App extends React.Component {
                     borderRadius: "100px",
                     border: "5px solid #ff337d",
                   }}
-                  alt='profile-img'
+                  alt="profile-img"
                 />
                 <h1
                   style={{
@@ -75,7 +75,7 @@ class App extends React.Component {
                 >
                   Country: {person.location.country}
                 </h1>
-                <button className='random-btn' onClick={() => this.repeat()}>
+                <button className="random-btn" onClick={() => this.repeat()}>
                   New random user!
                 </button>
               </div>
@@ -117,7 +117,7 @@ class App extends React.Component {
           focusable="false"
           data-prefix="far"
           data-icon="spinner-third"
-          class="svg-inline--fa fa-spinner-third fa-w-16"
+          className="svg-inline--fa fa-spinner-third fa-w-16"
           role="img"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
@@ -134,7 +134,7 @@ class App extends React.Component {
           focusable="false"
           data-prefix="far"
           data-icon="spinner-third"
-          class="svg-inline--fa fa-spinner-third fa-w-16"
+          className="svg-inline--fa fa-spinner-third fa-w-16"
           role="img"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
