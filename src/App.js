@@ -10,7 +10,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    this.repeat();
+    setInterval(() => this.repeat(), 10000);
   }
 
   repeat() {
