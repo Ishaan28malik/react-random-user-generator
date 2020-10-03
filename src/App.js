@@ -1,6 +1,4 @@
 import React from "react";
-import Persons from "./person";
-import Pictures from "./picture";
 
 class App extends React.Component {
   constructor(props) {
@@ -12,11 +10,11 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    setInterval(() => this.repeat(), 2000);
+    setInterval(() => this.repeat(), 10000);
   }
 
   repeat() {
-    if (this.state.loading == true) {
+    if (this.state.loading === true) {
       this.setState({ loading: false });
     }
     fetch("https://randomuser.me/api/?results=1")
@@ -30,14 +28,16 @@ class App extends React.Component {
               <div key={person.results}>
                 <img
                   src={person.picture.large}
+                  className='profile-pic'
                   style={{
                     marginTop: "-130px",
                     marginLeft: "85px",
                     height: "200px",
                     width: "200px",
                     borderRadius: "100px",
-                    border: "5px solid blue",
+                    border: "5px solid #ff337d",
                   }}
+                  alt='profile-img'
                 />
                 <h1
                   style={{
@@ -73,8 +73,11 @@ class App extends React.Component {
                     color: "white",
                   }}
                 >
-                  Country:{person.location.country}
+                  Country: {person.location.country}
                 </h1>
+                <button className='random-btn' onClick={() => this.repeat()}>
+                  New random user!
+                </button>
               </div>
             </div>
           );
@@ -94,7 +97,7 @@ class App extends React.Component {
             height: "520px",
             width: "450px",
             marginTop: "150px",
-            backgroundColor: "blue",
+            backgroundColor: "#222831",
           }}
         >
           <div className="container1" style={{ margin: "30px" }}>
