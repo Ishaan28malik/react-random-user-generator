@@ -89,10 +89,8 @@ class App extends React.Component {
   render() {
     return (
       <>
-        {/* <h1>Hi there</h1> */}
         <div
           style={{
-            // border: "2px solid",
             borderRadius: "20px",
             height: "520px",
             width: "450px",
