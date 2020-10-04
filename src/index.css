@@ -9,36 +9,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #8080ff;
 }
-svg {
-  position: absolute;
-  top: 40%;
-  left: 45%;
-  height: 10em;
-  transform: rotate(-60deg);
-  color: black;
-  animation: 3s linear 0s infinite rotate;
-}
-
-#shadow {
-  animation: 3s linear 0s infinite reverse rotate;
-  color: darkgrey;
-  opacity: 90%;
-  z-index: -1;
-  opacity: 70%;
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(-60deg);
-  }
-  to {
-    transform: rotate(300deg);
-  }
-}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h2{
+  margin:12px 0;
 }
 
 .profile-pic {
@@ -46,9 +24,7 @@ code {
 }
 
 .random-btn {
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-top: 10%;
+  margin: 10% 15%;
   height: 50px;
   width: 70%;
   align-self: center;
@@ -58,4 +34,49 @@ code {
   background-color: #ff337d;
   font-size: 1rem;
   color: #fff;
+  cursor: pointer;
+}
+
+.loader{
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.bubble {
+  width: 20px;
+  height: 20px;
+  margin: 2px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: gray;
+  animation: in-out-all 1s infinite;
+}
+.bubble-first {
+  width: 18px;
+  height: 18px;
+}
+.bubble-second {
+  animation-delay: 250ms;
+}
+.bubble-third {
+  animation-delay: 500ms;
+}
+@keyframes in-out-all {
+  0% {
+    width: 20px;
+    height: 20px;
+  }
+  50% {
+    width: 10px;
+    height: 10px;
+  }
+  100% {
+    width: 20px;
+    height: 20px;
+  }
 }
