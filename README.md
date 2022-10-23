@@ -21,5 +21,3 @@ A Random User Generator using React
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ce65e4de-c175-4230-876a-bb8144d2947a/deploy-status)](https://app.netlify.com/sites/zen-khorana-1c4d80/deploys)
 
 # Features Coming up is adding the contact card in with the portfolio for each user .
-
-https://zen-khorana-1c4d80.netlify.app/
